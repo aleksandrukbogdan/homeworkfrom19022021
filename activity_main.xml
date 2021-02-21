@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="15dp"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              >
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/newproduct"
+                  android:layout_weight="1"
+                  android:hint="Введите текст"/>
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnadd"
+                android:layout_weight="1.4"
+                android:text="Добавить"/>
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btndell"
+                android:layout_weight="1.4"
+                android:text="Удалить"/>
+    </LinearLayout>
+    <ListView
+            android:id="@+id/productList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="multipleChoice"
+    />
+
+</LinearLayout>
